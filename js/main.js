@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function async() {
 
   fetch(
-    "data.json"
+    "https://github.com/pritymistry/PWA/blob/main/data.json"
   )
     .then((response) => response.json())
     .then((data) => {
