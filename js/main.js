@@ -65,11 +65,12 @@ function urlBase64ToUint8Array(base64String) {
 
 function subscribeUserToPush() {
   navigator.serviceWorker.ready.then((registration) => {
+    console.log("___________Service Worker is ready:", registration);
     registration.pushManager
       .subscribe({
         userVisibleOnly: true,
         applicationServerKey: urlBase64ToUint8Array(
-          "BO5POPuLiXMFGUhPlCYqy7fqLbHGBm9vlxHCJyEEPBOPxiWDx3MxxSoe2KH08qCqfvMDs4mgn1osI-cUCmhrfWA"
+          "BBX8C-noWUAN2u7Ubof5AwHD-doo0ZFlvNbFKtIsoYnuhMvQZIW8ewxUneXklcdXJft8JATHGRWFc7dwdT3gezQ"
         ),
       })
       .then((subscription) => {
