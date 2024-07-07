@@ -69,7 +69,7 @@ function subscribeUserToPush() {
       .subscribe({
         userVisibleOnly: true,
         applicationServerKey: urlBase64ToUint8Array(
-          "BE0G5qTqtd4iZ2W07M5oE2Hmx0piYms2ZqVNhmrMgoETk_RARa7wMKXjonRJK_OiLC-BzBS2E2w1cw0MZE9H4QI"
+          "BO5POPuLiXMFGUhPlCYqy7fqLbHGBm9vlxHCJyEEPBOPxiWDx3MxxSoe2KH08qCqfvMDs4mgn1osI-cUCmhrfWA"
         ),
       })
       .then((subscription) => {
@@ -77,7 +77,7 @@ function subscribeUserToPush() {
 
         // Send subscription to the server
         // fetch("https://pwa-mlbl.onrender.com/subscribe", {
-        fetch("http://127.1.1.0/subscribe", {
+        fetch("https://pwa-mlbl.onrender.com/subscribe", {
 
           method: "POST",
           body: JSON.stringify(subscription),
