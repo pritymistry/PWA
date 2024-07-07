@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+article {
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.custom-card {
+    transition: transform 0.2s; /* Animation for hover effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Shadow for depth */
+    margin-top: 20px; /* Spacing from the top */
+}
+
+.custom-card:hover {
+    transform: scale(1.05); /* Slightly enlarge cards on hover */
+}
+
+.custom-card .card-img-top {
+    height: 180px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images cover the area */
+}
+
+.custom-btn {
+    background-color: #007bff; /* Primary button color */
+    border-color: #007bff; /* Border color to match */
+}
+
+.custom-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-color: #0056b3;
+}
