@@ -14,7 +14,7 @@ const urlsToCache = [
     '/images/icons/icon-512x512.png'
 ];
 self.addEventListener('fetch', event => {
-    const url = './data.json';
+    const url = 'data.json';
 
     if (event.request.url.indexOf(url) > -1) {
         event.respondWith(
