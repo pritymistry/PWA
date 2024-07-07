@@ -14,7 +14,7 @@ const urlsToCache = [
     '/images/icons/icon-512x512.png'
 ];
 self.addEventListener('fetch', event => {
-    const url = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=b61b051d951b40a9add3abb5e466a84e';
+    const url = './data.json';
 
     if (event.request.url.indexOf(url) > -1) {
         event.respondWith(
